@@ -354,7 +354,7 @@ nav{
     display: flex;
     flex-direction: column;
     width: clamp(250px, 25vw, 25vw);
-    height: clamp(200px, 15vw, 15vw);
+    height: clamp(200px, 17vw, 17vw);
     background-color: white;
     border-radius: 0.3vw;
 }
