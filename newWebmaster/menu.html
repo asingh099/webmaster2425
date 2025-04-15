@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="menu.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <div class="ham" id="ham" onclick="openMenu()">
+        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg>    
+    </div>
+    <div class="navHam" id="navHam">
+        <div class="menuLink">
+            <a href="menu.html" class="close open2">Menu</a>
+            <p class="open2" onclick="closeMenu()">X</p>
+        </div>
+        <a href="reservations.html" class="open">Contact Us</a>
+        <a href="about.html" class="open">About</a>
+        <a href="process.html" class="open">Process</a>
+        <a href="references.html" class="open">References</a>
+    </div>
+    <div class="aboveNav">
+        <div class="logo">
+            <a href="index.html" id="indexLink">            
+                <img src="webmaster logo revised 5.png" alt="logo" id="logo" href="index.html">
+            </a>
+        </div>
+        <div class="order">
+            <span class="dot">
+                <a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg></a>
+            </span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <nav>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html" class="inactive">About</a>
+        <a href="process.html" class="inactive">Process</a>
+        <a href="reservations.html" class="inactive">Contact Us</a>
+        <a href="references.html" class="inactive">References</a>
+    </nav>
+
+    <div class="menuHeading">
+        <h1>Deliciously Vegetarian</h1>
+        <p>Where every bite is a celebration of freshness and sustainability</p>
+    </div>
+    <div class="categories">
+        <a href="#lunch">Lunch</a>
+        <a href="#dinner">Dinner</a>
+        <a href="#dessert">Dessert</a>
+        <a href="#drinks">Drinks</a>
+    </div>
+    <h1 id="lunchTitle">Lunch</h1>
+    <div class="lunchFoods" id="lunch">
+        <div class="lunchItem">
+            <h3>Sicilian Pasta</h3>
+            <img src="sicilianPasta.jpg" alt="">
+            <p>A hearty dish featuring al dente pasta tossed in a vibrant tomato-based sauce infused with capers, olives, and fresh basil — inspired by the rustic flavors of Sicily</p>      
+            <h3 id="sicilianPasta">14.99</h3>
+            <button class="addToCart" onclick="addToCart('sicilianPasta', 'Sicilian Pasta')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Trofie al Pesto</h3>
+            <img src="trofieAlPesto.jpg" alt="">
+            <p>Traditional Ligurian pasta spirals smothered in a creamy homemade Genovese pesto, made with fresh basil, pine nuts, Parmigiano-Reggiano, and extra virgin olive oil</p>
+            <h3 id="trofiAl">13.99</h3>
+            <button class="addToCart" onclick="addToCart('trofiAl', 'Trofie al Pesto')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Sicilian Aubergine Pizza</h3>
+            <img src="sicilianAuberginePizza.jpg" alt="">
+            <p>A wood-fired pizza topped with thinly sliced roasted aubergine, tangy tomato sauce, fresh mozzarella, and a sprinkle of oregano — a true Mediterranean classic</p>
+            <h3 id="sicilianAubergine">15.99</h3>
+            <button class="addToCart" onclick="addToCart('sicilianAubergine', 'Sicilian Aubergine Pizza')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Casarecce Pasta</h3>
+            <img src="casareccePasta.jpg" alt="">
+            <p>Short, twisted pasta served with a seasonal vegetable medley in a light garlic and olive oil sauce, finished with grated pecorino for a comforting yet elegant bite</p>
+            <h3 id="lunch1">13.99</h3>
+            <button class="addToCart" onclick="addToCart('lunch1', 'Casarecce Pasta')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>House Ravioli</h3>
+            <img src="houseRavioli.jpg" alt="">
+            <p>Delicate pasta pockets stuffed with ricotta and spinach, served in a velvety sage butter sauce and topped with toasted pine nuts for a rich, nutty finish</p>
+            <h3 id="lunch2">15.99</h3>
+            <button class="addToCart" onclick="addToCart('lunch2', 'Homemade Ravioli')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+    </div>
+    <h1 id="lunchTitle">Dinner</h1>
+    <div class="lunchFoods" id="dinner">
+        <div class="lunchItem">
+            <h3>Spaghetti All'Assassina</h3>
+            <img src="spaghettiAll'Assassina.jpg" alt="">
+            <p>A bold, fiery twist on spaghetti — pan-fried for a crispy texture and tossed in a spicy tomato sauce with a hint of garlic and chili, bringing out a smoky depth of flavor</p>
+            <h3 id="dinner1">18.99</h3>
+            <button class="addToCart" onclick="addToCart('dinner1', 'Spaghetti All Assassina')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Pici all’Aglione</h3>
+            <img src="Pici all’Aglione.jpg" alt="pici all'Aglione image">
+            <p>Thick, hand-rolled Tuscan noodles coated in a slow-cooked tomato and garlic sauce made with sweet Aglione garlic, delivering rich flavor without the bite</p>
+            <h3 id="dinner2">17.99</h3>
+            <button class="addToCart" onclick="addToCart('dinner2', 'Pici all’Aglione')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Caponata</h3>
+            <img src="caponata.jpg" alt="">
+            <p>A warm Sicilian stew of roasted eggplant, sweet bell peppers, celery, and tomatoes, gently braised in a tangy-sweet agrodolce sauce. Finished with capers and green olives for a perfectly balanced dish</p>
+            <h3 id="dinner3">16.99</h3>
+            <button class="addToCart" onclick="addToCart('dinner3', 'Caponata')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Potato Gnocchi</h3>
+            <img src="potatoGnocchi.jpg" alt="">
+            <p>Pillow-soft potato dumplings tossed in your choice of sauce — from a rich tomato basil to a creamy gorgonzola — each bite melts in your mouth with delicate, handmade texture</p>
+            <h3 id="dinner5">15.99</h3>
+            <button class="addToCart" onclick="addToCart('dinner5', 'Potato Gnocchi')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Margherita Pizza</h3>
+            <img src="MargheritaPizza.jpg" alt="">
+            <p>A wood-fired classic with San Marzano tomato sauce, fresh mozzarella, and aromatic basil on a crisp, chewy crust — simple, timeless, and satisfying</p>
+            <h3 id="dinner6">14.99</h3>
+            <button class="addToCart" onclick="addToCart('dinner6', 'Margherita Pizza')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+    </div>
+    <h1 id="lunchTitle">Dessert</h1>
+    <div class="lunchFoods" id="dessert">
+        <div class="lunchItem">
+            <h3>Tiramisu</h3>
+            <img src="Tiramisu.jpg" alt="">
+            <p>Layers of espresso-soaked ladyfingers and velvety mascarpone cream, dusted with rich cocoa powder. An elegant finish to any meal, made the traditional Italian way</p>
+            <h3 id="dessert1">8.99</h3>
+            <button class="addToCart" onclick="addToCart('dessert1', 'Tiramisu')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Gelato</h3>
+            <img src="Gelato.jpg" alt="">
+            <p>Authentic Italian-style gelato — ultra-creamy and bursting with flavor. Choose from rotating seasonal varieties like pistachio, stracciatella, and dark chocolate</p>
+            <h3 id="dessert2">6.99</h3>
+            <button class="addToCart" onclick="addToCart('dessert2', 'Gelato')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Affogato</h3>
+            <img src="Affogato.jpg" alt="">
+            <p>A scoop of vanilla gelato drowned in hot espresso — the perfect marriage of cold and heat, bitter and sweet</p>
+            <h3 id="dessert3">7.99</h3>
+            <button class="addToCart" onclick="addToCart('dessert3', 'Affogato')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Cannoli</h3>
+            <img src="canolli.jpg" alt="">
+            <p>Crisp, golden pastry shells filled with sweet ricotta cream, studded with dark chocolate chips and garnished with crushed pistachios and orange zest</p>
+            <h3 id="dessert4">6.99</h3>
+            <button class="addToCart" onclick="addToCart('dessert4', 'Cannoli')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Pizzelles</h3>
+            <img src="pizzelles.jpg" alt="">
+            <p>Delicate, crisp waffle cookies infused with anise or vanilla, made fresh and lightly dusted with powdered sugar — a nostalgic Italian treat</p>
+            <h3 id="dessert6">5.99</h3>
+            <button class="addToCart" onclick="addToCart('dessert6', 'Pizzelles')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Plum Crostata</h3>
+            <img src="plumCrostata.jpg" alt="">
+            <p>Rustic open-faced tart filled with juicy plums and a touch of lemon zest, baked in a buttery shortcrust and served warm or at room temperature</p>
+            <h3 id="dessert7">7.99</h3>
+            <button class="addToCart" onclick="addToCart('dessert7', 'Plum Crostata')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+    </div>
+    <h1 id="lunchTitle">Drinks</h1>
+    <div class="lunchFoods" id="drinks">
+        <div class="lunchItem">
+            <h3>Water</h3>
+            <p>Still or sparkling — always chilled, always refreshing</p>
+            <h3 id="drink1">1.99</h3>
+            <button class="addToCart" onclick="addToCart('drink1', 'Water')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Chinotto</h3>
+            <p>A bittersweet, citrusy Italian soda made from chinotto oranges — complex, herbaceous, and perfectly fizzy</p>
+            <h3 id="drink2">3.99</h3>
+            <button class="addToCart" onclick="addToCart('drink2', 'Chinotto')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Negroni</h3>
+            <p>Bold and bittersweet — a mix of gin, Campari, and sweet vermouth served over ice with an orange twist. A true Italian aperitivo</p>
+            <h3 id="drink3">11.99</h3>
+            <button class="addToCart" onclick="addToCart('drink3', 'Negroni')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Limonada</h3>
+            <p>Freshly squeezed Italian lemonade with a hint of mint — bright, tart, and lightly sweetened</p>
+            <h3 id="drink4">3.99</h3>
+            <button class="addToCart" onclick="addToCart('drink4', 'Limonada')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Cafe</h3>
+            <p>Classic Italian coffee brewed strong and served short — smooth, deep, and richly aromatic</p>
+            <h3 id="drink5">2.99</h3>
+            <button class="addToCart" onclick="addToCart('drink5', 'Cafe')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Aranciata</h3>
+            <p>Sun-ripened orange soda that’s sparkling, sweet, and citrusy — like a sip of summer in Sicily</p>
+            <h3 id="drink6">3.99</h3>
+            <button class="addToCart" onclick="addToCart('drink6', 'Aranciata')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+        <div class="lunchItem">
+            <h3>Latte Macchiato</h3>
+            <p>Creamy steamed milk "stained" with a shot of espresso — a smooth, mellow drink that’s perfect for a late afternoon pause</p>
+            <h3 id="drink7">4.99</h3>
+            <button class="addToCart" onclick="addToCart('drink7', 'Latte Macchiato')"><svg xmlns="http://www.w3.org/2000/svg" id="cartButtonIcon" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg><p>Add To Cart</p></button>
+        </div>
+    </div>
+    <footer>
+        <div class="address">
+            <h2>ADDRESS</h2>
+            <p>777 Water Wheel Dr, Veggietown, PA 15622</p>
+        </div>
+        <div class="contact">
+            <h2>QUICK LINKS</h2>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="process.html">Process</a>
+            <a href="references.html">References</a>
+        </div>
+        <div class="hours">
+            <h2>HOURS</h2>
+            <p>Sunday: 10 AM - 10 PM</p>
+            <p>Monday: 12 PM - 9 PM</p>
+            <p>Tuesday: 12 PM - 9 PM</p>
+            <p>Wednesday: 12 PM - 9 PM</p>
+            <p>Thursday: 12 PM - 9 PM</p>
+            <p>Friday: 10 AM - 10 PM</p>
+            <p>Saturday: 10 AM - 10 PM</p>
+        </div>
+        <div class="reservations">
+            <h2>RESERVATIONS</h2>
+            <p>Call 123-456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

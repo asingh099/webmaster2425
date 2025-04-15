@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .S{
+            height: 120vh;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+        .scrollEr{
+            height: 30vh;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: scroller;
+            animation-timeline: view();
+            animation-range-start: 25vh;
+            animation-range-end: 25vh;
+        }
+        @keyframes scroller{
+            from{scale: 0.5;}
+            to{scale: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="S">
+
+    </div>
+    <div class="scrollEr">
+        <h2>
+            Hello
+        </h2>
+    </div>
+    <div class="S">
+
+    </div>
+</body>
+</html>
